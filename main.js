@@ -1,4 +1,4 @@
-const API_URL = "SUA_URL_DA_MOCKAPI";
+const API_URL = "https://mockapi.io/projects/6a28c71d4e1e783349a5fbdc";
 const inputNome = document.getElementById("input-nome");
 const inputQuantidade = document.getElementById("input-quantidade");
 const btnCadastrar = document.getElementById("btn-cadastrar");
