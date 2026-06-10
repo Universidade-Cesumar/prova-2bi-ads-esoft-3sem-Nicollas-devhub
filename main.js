@@ -1,4 +1,4 @@
-const API_URL = "https://mockapi.io/projects/6a28c71d4e1e783349a5fbdc";
+const API_URL = "https://6a28c71d4e1e783349a5fbdb.mockapi.io/APIENFERMAGEM";
 const inputNome = document.getElementById("input-nome");
 const inputQuantidade = document.getElementById("input-quantidade");
 const btnCadastrar = document.getElementById("btn-cadastrar");
