@@ -1,0 +1,7 @@
+{
+  "name": "almoxarifado-enfermagem",
+  "version": "1.0.0",
+  "description": "Sistema de controle de estoque para almoxarifado de enfermagem utilizando MockAPI",
+  "main": "script.js",
+  "license": "MIT"
+}
