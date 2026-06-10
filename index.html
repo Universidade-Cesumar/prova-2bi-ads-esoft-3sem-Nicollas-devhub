@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Almoxarifado de Enfermagem</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="container">
+
+        <header>
+            <h1>Almoxarifado de Enfermagem</h1>
+            <p>Controle de materiais para a enfermagem</p>
+        </header>
+
+        <section class="card-form">
+            <h2>Cadastrar Material</h2>
+
+            <div class="grupo-input">
+                <label for="input-nome">Nome do Material</label>
+                <input
+                    type="text"
+                    id="input-nome"
+                    placeholder="Ex: Luva Descartável">
+            </div>
+
+            <div class="grupo-input">
+                <label for="input-quantidade">Quantidade</label>
+                <input
+                    type="number"
+                    id="input-quantidade"
+                    placeholder="Ex: 100">
+            </div>
+
+            <button id="btn-cadastrar">
+                 Cadastrar Material
+            </button>
+        </section>
+
+        <section class="card-tabela">
+            <h2>Estoque de Materiais</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                      <tbody id="lista-materiais">
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
