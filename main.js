@@ -1,4 +1,4 @@
-const API_URL = "https://6a28c71d4e1e783349a5fbdb.mockapi.io/APIENFERMAGEM";
+const API_URL = "https://6a28c71d4e1e783349a5fbdb.mockapi.io/APIENFERMAGEM/Almoxarifado";
 const inputNome = document.getElementById("input-nome");
 const inputQuantidade = document.getElementById("input-quantidade");
 const btnCadastrar = document.getElementById("btn-cadastrar");
@@ -35,7 +35,7 @@ async function carregarMateriais() {
             const linha = document.createElement("tr");
 
             linha.innerHTML = `
-                <td>${material.nome}</td>
+                <td>${material.name}</td>
                 <td>${material.quantidade}</td>
             `;
 
@@ -104,7 +104,7 @@ async function cadastrarMaterial() {
     } finally {
 
         btnCadastrar.disabled = false;
-        btnCadastrar.textContent = "➕ Cadastrar Material";
+        btnCadastrar.textContent = "Cadastrar Material";
     }
 }
 btnCadastrar.addEventListener("click", cadastrarMaterial);
