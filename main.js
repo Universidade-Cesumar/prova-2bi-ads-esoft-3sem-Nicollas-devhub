@@ -1,8 +1,10 @@
 const API_URL = "https://6a28c71d4e1e783349a5fbdb.mockapi.io/APIENFERMAGEM/Almoxarifado";
+
 const inputNome = document.getElementById("input-nome");
 const inputQuantidade = document.getElementById("input-quantidade");
 const btnCadastrar = document.getElementById("btn-cadastrar");
 const listaMateriais = document.getElementById("lista-materiais");
+
 async function carregarMateriais() {
 
     try {
@@ -21,12 +23,9 @@ async function carregarMateriais() {
 
             listaMateriais.innerHTML = `
                 <tr>
-                    <td colspan="2">
-                        Nenhum material cadastrado.
-                    </td>
+                    <td colspan="2">Nenhum material cadastrado.</td>
                 </tr>
             `;
-
             return;
         }
 
@@ -48,9 +47,7 @@ async function carregarMateriais() {
 
         listaMateriais.innerHTML = `
             <tr>
-                <td colspan="2">
-                    Erro ao carregar materiais.
-                </td>
+                <td colspan="2">Erro ao carregar materiais.</td>
             </tr>
         `;
     }
@@ -72,7 +69,7 @@ async function cadastrarMaterial() {
         btnCadastrar.textContent = "Cadastrando...";
 
         const novoMaterial = {
-            nome: nome,
+            name: nome,
             quantidade: Number(quantidade)
         };
 
@@ -107,6 +104,7 @@ async function cadastrarMaterial() {
         btnCadastrar.textContent = "Cadastrar Material";
     }
 }
+
 btnCadastrar.addEventListener("click", cadastrarMaterial);
 
 document.addEventListener("DOMContentLoaded", () => {
