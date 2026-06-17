@@ -36,6 +36,24 @@ async function carregarMateriais() {
             linha.innerHTML = `
                 <td>${material.name}</td>
                 <td>${material.quantidade}</td>
+
+                 <td>
+            <input
+                type="number"
+                id="input-retirada"
+                min="1"
+                placeholder="Qtd">
+        </td>
+
+        <td>
+            <button class="btn-baixar">
+                Baixar
+            </button>
+
+            <button class="btn-excluir">
+                Excluir
+            </button>
+        </td>
             `;
 
             listaMateriais.appendChild(linha);
