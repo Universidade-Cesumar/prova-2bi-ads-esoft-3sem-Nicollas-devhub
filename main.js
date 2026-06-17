@@ -53,8 +53,21 @@ async function carregarMateriais() {
             <button class="btn-excluir">
                 Excluir
             </button>
+            
         </td>
             `;
+             const btnBaixar = linha.querySelector(".btn-baixar");
+    const btnExcluir = linha.querySelector(".btn-excluir");
+
+    btnBaixar.addEventListener("click", () => {
+        alert("Baixado com sucesso");
+    });
+
+    btnExcluir.addEventListener("click", () => {
+        alert("Excluido com sucesso");
+    });
+
+    listaMateriais.appendChild(linha);
 
             listaMateriais.appendChild(linha);
         });
