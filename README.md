@@ -19,7 +19,10 @@ A API ela é constituída por rotas onde elas definem qual ação será executad
 
 
 Funcionamento do Sistema
-O projeto foi desenvolvido em parceria com uma enfermeira, visando facilitar o controle dos materiais utilizados no almoxarifado.
+
+O projeto está sendo  desenvolvido para facilitar a enfermeira no almoxarifado, onde tornando mais prático a busca de materiais hospitalares, visando a praticidade e facilitando o trabalho. 
+
+A seguir como funciona o sistema e os permicionamentos!!
 
 O sistema permite que o usuário:
 Pesquise materiais, como luvas, seringas e outros itens hospitalares;
