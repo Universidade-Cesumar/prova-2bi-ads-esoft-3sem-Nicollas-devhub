@@ -4,7 +4,7 @@
  */
 
 // URL base da sua MockAPI na nuvem. Mantenha o final do endpoint (ex: /materiais)
-const API_URL = "https://SUA_MOCK_API_ID.mockapi.io/materiais";
+const API_URL = "https://6a28c71d4e1e783349a5fbdb.mockapi.io/Materiais/Materiais";
 
 // =========================================================================
 // [CONTRATO TÉCNICO] CAPTURA DOS ELEMENTOS DO DOM (HTML)

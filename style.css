@@ -1,0 +1,140 @@
+/* =========================================================================
+   ESTILIZAÇÃO GERAL E SETUP DE LAYOUT HOSPITALAR
+   ========================================================================= */
+
+/* Reseta configurações básicas e define fonte limpa/profissional para saúde */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f5; /* Fundo cinza claro e limpo imitando ambiente de clínica */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Caixa principal que envelopa todo o painel do almoxarifado */
+.container {
+    max-width: 750px;
+    margin: 30px auto; /* Centraliza horizontalmente na tela */
+    background: #ffffff; /* Fundo branco puro para destacar as tabelas */
+    padding: 30px;
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave para dar profundidade */
+}
+
+/* Customização dos títulos principais da interface */
+h1 {
+    color: #0056b3; /* Azul hospitalar clínico */
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #6c757d; /* Texto cinza secundário para o subtítulo */
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================================
+   ESTILIZAÇÃO DO FORMULÁRIO DE CADASTRO
+   ========================================================================= */
+
+/* Divisórias de seções dentro do painel */
+.form-section, .list-section {
+    margin-bottom: 35px;
+}
+
+/* Títulos das subseções */
+h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    border-bottom: 2px solid #eef2f5; /* Linha sutil abaixo do título */
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Container de espaçamento para agrupamento de campos e labels */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilização das etiquetas textuais dos inputs */
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Customização visual das caixas de input de texto e número */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura total do input */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.2s; /* Efeito suave ao clicar no campo */
+}
+
+/* Efeito visual quando a enfermeira clica/foca no campo de input */
+.form-group input:focus {
+    border-color: #0056b3;
+    outline: none; /* Remove a borda padrão preta do navegador */
+}
+
+/* Botão de cadastro estilizado com cor de destaque hospitalar */
+button {
+    background-color: #007bff; /* Azul padrão de ação */
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%; /* Ocupa toda a extensão do formulário */
+    transition: background-color 0.2s;
+}
+
+/* Efeito visual quando o mouse passa por cima do botão */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estado visual do botão enquanto a requisição da API está processando */
+button:disabled {
+    background-color: #a0c4ff;
+    cursor: not-allowed; /* Altera o cursor do mouse indicando bloqueio */
+}
+
+
+/* =========================================================================
+   TABELA DE EXIBIÇÃO DE INVENTÁRIO (GET RENDER)
+   ========================================================================= */
+
+/* Estrutura geral da tabela de insumos médicos */
+.data-table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina espaços duplos entre as bordas internas */
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Estilização das células de cabeçalho e de dados comuns */
+.data-table th, .data-table td {
+    border-bottom: 1px solid #eef2f5;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Cabeçalho específico da tabela */
+.data-table th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: 700;
+}
+
+/* Efeito zebrado: destaca linhas alternadas da tabela para leitura rápida */
+.data-table tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
