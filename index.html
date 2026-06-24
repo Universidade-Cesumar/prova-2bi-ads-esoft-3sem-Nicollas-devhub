@@ -3,60 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almoxarifado de Enfermagem</title>
+    <title>Almoxarifado Enfermagem</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-
-        <header>
-            <h1>Almoxarifado de Enfermagem</h1>
-            <p>Controle de materiais para a enfermagem</p>
-        </header>
-
-        <section class="card-form">
-            <h2>Cadastrar Material</h2>
-
-            <div class="grupo-input">
-                <label for="input-nome">Nome do Material</label>
-                <input
-                    type="text"
-                    id="input-nome"
-                    placeholder="Ex: Luva Descartável">
+    <main class="container">
+        <h1> Almoxarifado de Enfermagem</h1>
+        <p class="subtitle">Controle de Materiais Médicos</p>
+        
+        <section class="form-section">
+            <h2>Cadastrar Novo Material</h2>
+            
+            <div class="form-group">
+                <label for="input-nome">Descrição do Material (Nome/Especificação):</label>
+                <input type="text" id="input-nome" placeholder="Ex: Seringa Descartável 5ml c/ Agulha">
             </div>
-
-            <div class="grupo-input">
-                <label for="input-quantidade">Quantidade</label>
-                <input
-                    type="number"
-                    id="input-quantidade"
-                    placeholder="Ex: 100">
+            
+            <div class="form-group">
+                <label for="input-quantidade">Quantidade em Estoque (Unidades):</label>
+                <input type="number" id="input-quantidade" placeholder="Ex: 150">
             </div>
-
-            <button id="btn-cadastrar">
-                 Cadastrar Material
-            </button>
+            
+            <button id="btn-cadastrar">Cadastrar no Estoque</button>
         </section>
 
-        <section class="card-tabela">
-            <h2>Estoque de Materiais</h2>
-
-            <table>
+        <section class="list-section">
+            <h2>Inventário de Materiais Disponíveis</h2>
+            <table class="data-table">
                 <thead>
                     <tr>
-                        <th>Material</th>
-                        <th>Quantidade</th>
-                        <th>Retirada</th>
-                        <th>Ações</th>
+                        <th>Cód. Sistema</th>
+                        <th>Descrição do Insumo Médico</th>
+                        <th>Qtd. Disponível</th>
                     </tr>
                 </thead>
-                      <tbody id="lista-materiais">
-                </tbody>
+                <tbody id="lista-materiais">
+                    </tbody>
             </table>
         </section>
+    </main>
 
-    </div>
-    <script src="main.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
